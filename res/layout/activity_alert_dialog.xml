@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlertDialogActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialog"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:padding="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:hint="Enter Title"
+        android:id="@+id/txtTitle"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="Enter Message"
+        android:id="@+id/txtMessage"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="Enter label for positive button"
+        android:id="@+id/txtPositive"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:hint="Enter label for negative button"
+        android:id="@+id/txtNegative"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelable"
+                android:textSize="30dp"
+                android:id="@+id/rbCancelable"
+                android:checked="true"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non Cancelable"
+                android:textSize="30dp"
+                android:id="@+id/rbNonCancelable" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Alert Dialog"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:onClick="showAlertDialog"/>
+</LinearLayout>
