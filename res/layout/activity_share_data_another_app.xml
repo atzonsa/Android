@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareDataAnotherApp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Data with Another App"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:padding="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:hint="Enter Subject"
+        android:id="@+id/txtSubject"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:textSize="20dp"
+        android:hint="What to share"
+        android:id="@+id/txtShareData"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:textSize="20dp"
+        android:hint="Share title"
+        android:id="@+id/txtShareTitle"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:padding="20dp"
+        android:textSize="30dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:onClick="shareApp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
